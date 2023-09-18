@@ -2,32 +2,30 @@
     display: flex;  
     flex-flow: row wrap;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-family: 'Rubik', sans-serif;
     text-align: center; 
     background-color: #1B1924;
     color: #FFF;
     user-select: none;
     height: 100vh;
-    align-items: stretch;
 }
 
 /* Medium screens */
 .aside {
-  background: gold;
   display: flex;
   flex-direction: column;
   margin: 30px auto;
   max-width: 350px;
   flex-grow: 1 ;
   flex-shrink: 0;
+  background-color: gold;
 }
 
 
 .fromToContainer {
     display: flex;
     flex-direction: row;
-    background-color: yellow;
     justify-content: space-between;
     margin: 0px auto;
 }
@@ -35,11 +33,12 @@
 .endorsment {
     display: flex;
     flex-direction: column;
-    background: deepskyblue;
     margin: auto 30px;
     flex-basis: 350px;
     flex-grow: 1 ;
     flex-shrink: 0;
+    background-color: green;
+    max-width: 40%;
 }
   
 /* component code */
@@ -56,10 +55,9 @@ img {
     border-radius: 8px;
     font-size: 20px;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     margin: 10px 0;
-    width: 100%;
     box-sizing: border-box;
+    height: 120px;
 }
 
 .subInput{
@@ -70,7 +68,6 @@ img {
     border-radius: 8px;
     font-size: 20px;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     width: 48%;
     box-sizing: border-box;
 }
@@ -83,46 +80,29 @@ button {
     border-radius: 8px;
     font-size: 20px;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     width: 100%;
     user-select: all;
     cursor: pointer;
+    margin-top: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 10px;
-}
-
-ul li {
-    font-size: 20px;
-    background-color: #FFF;
-    color: #1B1924;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2) ;
-    box-sizing: border-box;
-
-}
 
 .endorsement-title {
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     margin: 8px 0;
+    background-color: yellow;
+    max-width: 40%;
   }
   
-  .comments {
-    width: 100%;
+  .endorsment-list {
     display: flex;
     flex-direction: column;
     /*max-height: 800px;*/
     /*overflow-y: auto;*/
+    width: 200px;
+    background-color: red;
   }
   
   .list-block {
@@ -157,5 +137,6 @@ ul li {
   
   .icon {
     cursor: pointer;
+
   }
   
