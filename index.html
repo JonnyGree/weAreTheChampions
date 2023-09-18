@@ -3,11 +3,12 @@
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <title>We are the Champions</title>
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="navigation">
-            <div class="upperContainer">
-                <img src="assets/freddie.png">
+        <div class="wrapper">
+            <aside class="aside">
+                <img src="assets/freddie.png" alt="freddie">
                 <h1>We are the Champions</h1>
                 <textarea id="input-field" placeholder="Write your endorsment here"></textarea>
                 <div class="fromToContainer">
@@ -15,14 +16,14 @@
                     <input type="text" class="subInput" id="to-field" placeholder="To">
                 </div>
                 <button id="publish-button">Publish</button>
-            </div>
-            <div class="lowerContainer">
+            </aside>
+            <endorsment class="endorsment">    
                 <h1>Endorsements</h1>
                 <ul id="endorsements-list">
                     <li>"this is mazing"</li>
                     <li>"love this app"</li>
                 </ul>
-            </div>
+            </endorsment>
         </div>
         <script src="index.js" type="module"></script>
     </body>

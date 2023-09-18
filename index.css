@@ -1,73 +1,47 @@
-html, body {
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
+    text-align: center; 
     background-color: #1B1924;
     color: #FFF;
     user-select: none;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin: 30px auto;
-    background-color: red;
-}
-
-.upperContainer {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin: 30px auto;
-    background-color: red;
-}
-
-.lowerContainer {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin: 30px auto;
-    background-color: red;
-}
-
-/* Large */
-.navigation {
-  display: flex;
-  flex-flow: row wrap;
-  /* This aligns items to the end line on main-axis */
-  justify-content: flex-end;
+    height: 100vh;
 }
 
 /* Medium screens */
-@media all and (max-width: 800px) {
-  .navigation {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
-  }
+.aside {
+  background: gold;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  max-width: 350px;
+  flex-grow: 1 ;
+  flex-shrink: 0;
 }
 
-/* Small screens */
-@media all and (max-width: 500px) {
-  .navigation {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
-}
 
 .fromToContainer {
     display: flex;
     flex-direction: row;
     background-color: yellow;
     justify-content: space-between;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
-h1 {
-    text-align: center;
+.endorsment {
+    display: flex;
+    flex-direction: column;
+    background: deepskyblue;
+    margin: auto 30px;
+    flex-basis: 350px;
+    flex-grow: 1 ;
+    flex-shrink: 0;
 }
-
-
+  
+/* component code */
 img {
     width: 90px;
     margin: 0 auto;
@@ -127,7 +101,6 @@ ul li {
     color: #1B1924;
     padding: 15px;
     border-radius: 8px;
-    width: 100%;
     text-align: center;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2) ;
     box-sizing: border-box;
