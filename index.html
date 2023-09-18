@@ -5,20 +5,24 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
-            <img src="assets/freddie.png">
-            <h1>We are the Champions</h1>
-            <textarea id="input-field" placeholder="Write your endorsment here"></textarea>
-            <div class="fromToContainer">
-                <input type="text" class="subInput" id="from-field" placeholder="From">
-                <input type="text" class="subInput" id="to-field" placeholder="To">
+        <div class="navigation">
+            <div class="upperContainer">
+                <img src="assets/freddie.png">
+                <h1>We are the Champions</h1>
+                <textarea id="input-field" placeholder="Write your endorsment here"></textarea>
+                <div class="fromToContainer">
+                    <input type="text" class="subInput" id="from-field" placeholder="From">
+                    <input type="text" class="subInput" id="to-field" placeholder="To">
+                </div>
+                <button id="publish-button">Publish</button>
             </div>
-            <button id="publish-button">Publish</button>
-            <h1>Endorsements</h1>
-            <ul id="endorsements-list">
-                <li>"this is mazing"</li>
-                <li>"love this app"</li>
-            </ul>
+            <div class="lowerContainer">
+                <h1>Endorsements</h1>
+                <ul id="endorsements-list">
+                    <li>"this is mazing"</li>
+                    <li>"love this app"</li>
+                </ul>
+            </div>
         </div>
         <script src="index.js" type="module"></script>
     </body>
