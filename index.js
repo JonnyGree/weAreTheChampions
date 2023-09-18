@@ -90,6 +90,8 @@ function appendItemToEndorsmentListEl(id, item) {
 
     listIconEl.addEventListener("click", function () {
         if (localStorage.getItem(id)) {
+        listIconEl.style.pointerEvents = "none";
+        listIconEl.style.opacity = "0.5";
         return; // If the ID exists in localStorage, do nothing (icon was already clicked)
         }
         // Get a reference to the specific endorsement you want to update
