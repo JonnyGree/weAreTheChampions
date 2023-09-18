@@ -9,6 +9,7 @@
     color: #FFF;
     user-select: none;
     height: 100vh;
+    align-items: stretch;
 }
 
 /* Medium screens */
@@ -84,6 +85,8 @@ button {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     width: 100%;
+    user-select: all;
+    cursor: pointer;
 }
 
 ul {
@@ -106,3 +109,53 @@ ul li {
     box-sizing: border-box;
 
 }
+
+.endorsement-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 8px 0;
+  }
+  
+  .comments {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*max-height: 800px;*/
+    /*overflow-y: auto;*/
+  }
+  
+  .list-block {
+    /*flex: 1;*/
+    color: #1b1924;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em;
+    gap: 0.5em;
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+  }
+  
+  .list-block-none {
+    display: none;
+  }
+  
+  .list-from-like {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .list-count-like {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .list-header-footer {
+    font-weight: bold;
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
